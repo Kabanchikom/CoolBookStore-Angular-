@@ -1,0 +1,28 @@
+@import '../../styles';
+
+.filter-btn {
+  border-style: none;
+  background: none;
+
+  color: #8a8a8a;
+  cursor: pointer;
+
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  transition: color linear 0.2s;
+
+  &:hover {
+    color: #424242;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 725px) {
+  .filter-btn {
+    display: block;
+  }
+}

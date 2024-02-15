@@ -1,0 +1,14 @@
+<div *ngIf="isActive" class="modal-window" style="--max-width:{{maxWidth}};">
+    <div class="modal-window-content">
+        <div class="modal-window-content-header">
+            <div class="modal-window-content-header-control-container">
+                <app-button variant="btn-control" (click)="onCloseClick()">
+                    <i class="bi bi-x"></i>
+                </app-button>
+            </div>
+        </div>
+        <div class="modal-window-content-body">
+            <ng-content></ng-content>
+        </div>
+    </div>
+</div>

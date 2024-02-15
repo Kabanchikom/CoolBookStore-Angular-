@@ -1,0 +1,18 @@
+<article class="product-card-box">
+    <app-card-box [imgSrc]="'assets/' + (product?.imgSrc ?? '')" (onCardClick)="cardClick.emit(product?.id)">
+        <app-card-name [name]="product?.name ?? ''" />
+        <app-card-description description="{{product?.description}}" />
+        <app-card-price [price]="product?.oldPrice ?? 0" />
+        <div class="product-card-box-btn-container">
+            <app-button
+                variant="btn-primary width-100" class="product-card-box-btn-container-add-btn"
+                (click)="onAddClick()"
+            >
+                Добавить <i class="bi bi-cart"></i>
+            </app-button>
+            <app-button variant="btn-outline-primary width-100" class="product-card-box-btn-container-like-btn">
+                <i class="bi bi-heart lg"></i>
+            </app-button>
+        </div>
+    </app-card-box>
+</article>

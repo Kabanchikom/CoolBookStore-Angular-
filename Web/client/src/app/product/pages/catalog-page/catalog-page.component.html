@@ -1,0 +1,10 @@
+<app-flex flexDirection="column" gap="20px">
+    <app-filter-block />
+    <app-horizontal-line />
+    <app-sort-block [total]="total"></app-sort-block>
+    <app-product-list [products]="products" />
+    <app-cart-widget
+        *ngIf="showCartWidget"
+        [count]="cartCount"
+        (click)="onCartClick()"/>
+</app-flex>

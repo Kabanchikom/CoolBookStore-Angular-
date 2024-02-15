@@ -1,0 +1,69 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import '../src/app/shared/styles';
+
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+
+  color: $color-text;
+  background-color: $color-layer-0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+
+  transition: box-shadow linear .25s;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid $color-primary;
+  box-shadow: 0 0 10px $color-primary-active;
+}
+
+input.ng-touched.ng-invalid {
+  border: 1px solid $color-danger
+}
+
+input:focus.ng-touched.ng-invalid {
+  outline: none;
+  border: 1px solid $color-danger;
+  box-shadow: 0 0 10px $color-danger-active;
+}
+
+.text-danger {
+  color: $color-danger
+}

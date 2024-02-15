@@ -1,0 +1,11 @@
+
+:host {
+  font-size: 1.2rem;
+
+  .summary-card {
+    &-checkout-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

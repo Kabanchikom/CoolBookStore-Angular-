@@ -1,0 +1,14 @@
+<app-flex-container gap="20px">
+    <app-filter-block />
+    <app-horizontal-line />
+    <app-sort-block [total]="1488" />
+    <app-flex-row>
+        <app-flex-column>
+            <app-flex-row *ngFor="let x of favorites">
+                <app-flex-column>
+                    <app-favorite-card [product]="x" />
+                </app-flex-column>
+            </app-flex-row>
+        </app-flex-column>
+    </app-flex-row>
+</app-flex-container>

@@ -1,0 +1,75 @@
+{
+    "products": [
+        {
+            "id": "87b57b26-7a7c-49eb-dfa6-08dadb79190b",
+            "name": "Пикник на обочине",
+            "imgSrc": "img/abs_strugatskie_piknik_na_obochine.jpeg",
+            "oldPrice": 219,
+            "newPrice": 175,
+            "isOnSale": false,
+            "description": "A.Н. Стругацкий, Б.Н. Стругацкий"
+        },
+        {
+            "id": "963e7e3c-529b-49a0-dfa7-08dadb79190b",
+            "name": "Архипелаг Гулаг",
+            "imgSrc": "img/archipelag_gulag.jpg",
+            "oldPrice": 99,
+            "newPrice": 89,
+            "isOnSale": true,
+            "description": "А.И. Солженицын"
+        },
+        {
+            "id": "95950a14-907f-40cb-dfa8-08dadb79190b",
+            "name": "Государственность и Анархия",
+            "imgSrc": "img/bakunin_gosudarstvennost_i_anarhia.jpg",
+            "oldPrice": 529,
+            "newPrice": 429,
+            "isOnSale": true,
+            "description": "М.А. Бакунин"
+        },
+        {
+            "id": "f32892a2-f97c-46a7-dfa9-08dadb79190b",
+            "name": "Книга символов",
+            "imgSrc": "img/balmont_kniga_simvolov.jpg",
+            "oldPrice": 749,
+            "newPrice": 699,
+            "isOnSale": false,
+            "description": "К.Д. Бальмонт"
+        },
+        {
+            "id": "fa68878a-7cbe-416d-dfaa-08dadb79190b",
+            "name": "Дракула",
+            "imgSrc": "img/brem_stoker_drakula.jpg",
+            "oldPrice": 419,
+            "newPrice": 399,
+            "isOnSale": true,
+            "description": "Б. Стокер"
+        },
+        {
+            "id": "c75a4214-ea39-453b-dfab-08dadb79190b",
+            "name": "Бусидо",
+            "imgSrc": "img/busido.jpg",
+            "oldPrice": 99,
+            "isOnSale": false,
+            "description": "И. Нитобэ"
+        },
+        {
+            "id": "8bfaec57-ed9f-4ccd-dfac-08dadb79190b",
+            "name": "Божественная комедия",
+            "imgSrc": "img/dante_bozestvennaya_komediya.jpg",
+            "oldPrice": 1299,
+            "isOnSale": false,
+            "description": "Д. Алигьери"
+        },
+        {
+            "id": "58e07f65-d398-4b6c-dfad-08dadb79190b",
+            "name": "Гиперион",
+            "imgSrc": "img/den_simmons_hyperion.jpg",
+            "oldPrice": 2095,
+            "newPrice": 1495,
+            "isOnSale": true,
+            "description": "Д. Симмонс"
+        }
+    ],
+    "total": 26
+}

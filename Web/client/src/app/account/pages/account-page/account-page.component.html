@@ -1,0 +1,62 @@
+<div class="account-page">
+    <app-flex gap="20px" flexDirection="column">
+        <div class="account-page-header">
+            <h2>Личный кабинет</h2>
+            <h3>Добро пожаловать, &lt;Username&gt;!</h3>
+        </div>
+        <div class="account-page-content">
+            <app-tabs>
+                <app-tab-header [defaultId]="activeTabId">
+                    <app-tab-nav-link
+                        title="Заказы"
+                        tabId="orders"
+                        routerLink="orders"
+                    />
+                    <app-tab-nav-link
+                        title="Избранное"
+                        tabId="favorites"
+                        routerLink="favorites"
+                    />
+                    <app-tab-nav-link
+                        title="Пользовательские данные и настройки"
+                        tabId="settings"
+                        routerLink="settings"
+                    />
+                </app-tab-header>
+                <app-outlet-tab>
+                    <router-outlet />
+                </app-outlet-tab>
+            </app-tabs>
+            
+            <!-- <app-tab-header>
+                <app-nav-tab-link
+                    title="Заказы"
+                    tabId="orders"
+                    routerLink="orders"
+                />
+                <app-nav-tab-link
+                    title="Избранное"
+                    tabId="favorites"
+                    routerLink="favorites"
+                />
+                <app-nav-tab-link
+                    title="Пользовательские данные и настройки"
+                    tabId="settings"
+                    routerLink="settings"
+                />
+            </app-tab-header>
+            
+            <app-tab tabId="orders">
+                <router-outlet />
+            </app-tab>
+
+            <app-tab tabId="favorites">
+                <router-outlet />
+            </app-tab>
+
+            <app-tab tabId="settings">
+                <router-outlet />
+            </app-tab> -->
+        </div>
+    </app-flex>
+</div>

@@ -1,0 +1,46 @@
+[
+    {
+      "id": "cb0bf4f8-130f-4bad-8485-08db9dab15b4",
+      "name": "Пикник на обочине",
+      "imgSrc": "assets/img/abs_strugatskie_piknik_na_obochine.jpeg",
+      "oldPrice": 219,
+      "newPrice": 175,
+      "description": "А.Н. Стругацкий, Б.Н. Стругацкий",
+      "productId": "a2c7fa77-3255-4868-6dbb-08db64dfeb51",
+      "ownerId": "a296ad33-6cd0-4e31-a100-90d3567b8ea6",
+      "quantity": 3
+    },
+    {
+      "id": "3b0f2595-a681-4fad-a82d-08dba943b982",
+      "name": "Потерянный рай",
+      "imgSrc": "assets/img/djon_milton_poteryaniy_rai.jpg",
+      "oldPrice": 199,
+      "newPrice": null,
+      "description": "Д. Мильтон",
+      "productId": "43df706f-ab5f-4e22-6dc3-08db64dfeb51",
+      "ownerId": "a296ad33-6cd0-4e31-a100-90d3567b8ea6",
+      "quantity": 1
+    },
+    {
+      "id": "9a1edfdd-2629-4247-a82e-08dba943b982",
+      "name": "Фауст",
+      "imgSrc": "assets/img/gete_faust.jpg",
+      "oldPrice": 1199,
+      "newPrice": 1200,
+      "description": "И.В. Гете",
+      "productId": "2e3ef200-a568-4d14-6dc4-08db64dfeb51",
+      "ownerId": "a296ad33-6cd0-4e31-a100-90d3567b8ea6",
+      "quantity": 1
+    },
+    {
+      "id": "18a1b79b-e35b-4d3c-a82f-08dba943b982",
+      "name": "Замок",
+      "imgSrc": "assets/img/kafka-zamok.jpg",
+      "oldPrice": 199,
+      "newPrice": null,
+      "description": "Ф. Кафка",
+      "productId": "da70219c-2de3-4c7b-6dc5-08db64dfeb51",
+      "ownerId": "a296ad33-6cd0-4e31-a100-90d3567b8ea6",
+      "quantity": 1
+    }
+  ]

@@ -1,0 +1,205 @@
+<form class="checkout-form" #checkoutForm="ngForm" (ngSubmit)="onSubmit()">
+<app-grid gap="20px" gridTemplateColumns="3fr 1fr">
+    <app-card-wrapper [enablePadding]="true">
+        <app-flex gap="30px" flexDirection="column">
+            <app-flex gap="10px">
+                <app-flex flexDirection="column" gap="10px">
+                    <h3>Ваш заказ</h3>
+                    <a [routerLink]="['/ordering/cart']">Изменить</a>
+                </app-flex>
+                <app-flex gap="10px" flexWrap="wrap" flexDirection="row-reverse">
+                    <app-product-card-thumb *ngFor="let x of checkoutItems" [imgSrc]="'assets/' + x.imgSrc"/>
+                </app-flex>
+            </app-flex>
+
+            <app-horizontal-line />
+    
+            <app-flex-row>
+                <app-flex-column>
+                    <h3>Личные данные</h3>
+                    <app-tabs>
+                        <app-tab-header defaultId="newCustomer">
+                            <app-tab-nav-link
+                                title="Я новый покупатель"
+                                tabId="newCustomer"
+                            />
+                            <app-tab-nav-link
+                                title="Я постоянный покупатель"
+                                tabId="oldCustomer"
+                            />
+                        </app-tab-header>
+                        <app-tab tabId="newCustomer">
+                            <app-flex gap="20px">
+                                <app-flex-column>
+                                    <div>
+                                        <input
+                                            type="text" 
+                                            placeholder="Фамилия*"
+                                            name="lastname"
+                                            required
+                                            ngModel
+                                            #lastname="ngModel"
+                                        />
+                                        <span *ngIf="!lastname.valid && lastname.touched">
+                                            <small class="text-danger">Обязательное поле</small>
+                                        </span>
+                                    </div>
+                                </app-flex-column>
+
+                                <app-flex-column>
+                                    <div>
+                                        <input
+                                            type="text"
+                                            placeholder="Имя*"
+                                            name="firstname"
+                                            required
+                                            ngModel
+                                            #firstname="ngModel"
+                                        />
+                                    <span *ngIf="!firstname.valid && firstname.touched">
+                                        <small class="text-danger">Обязательное поле</small>
+                                    </span>
+                                    </div>
+                                </app-flex-column>
+
+                                <app-flex-column>
+                                    <input
+                                        type="text" 
+                                        placeholder="Отчество"
+                                        name="patronimyc"
+                                        ngModel
+                                        #patronimyc="ngModel"
+                                    />
+                                </app-flex-column>
+                            </app-flex>
+                        </app-tab>
+                        <app-tab tabId="oldCustomer">
+                            <app-flex gap="20px">
+                                todo
+                            </app-flex>
+                        </app-tab>
+                    </app-tabs>
+                </app-flex-column>
+            </app-flex-row>
+    
+            <app-horizontal-line />
+    
+            <app-flex-row>
+                <app-flex-column>
+                    <h3>Условия доставки</h3>
+                    <app-tabs>
+                        <app-tab-header defaultId="courier">
+                            <app-tab-nav-link
+                                title="Курьерская доставка"
+                                tabId="courier"
+                            />
+                            <app-tab-nav-link
+                                title="Самовывоз"
+                                tabId="pickup"
+                            />
+                        </app-tab-header>
+                        <app-tab tabId="courier">
+                            <app-flex gap="20px">
+                                <app-flex-container>
+                                    <app-flex-column>
+                                        <app-flex-row>
+                                            Укажите адрес доставки
+                                        </app-flex-row>
+                                        <app-flex-row>
+                                            <app-flex-column>
+                                                <div>
+                                                    <input
+                                                        type="text"
+                                                        placeholder="Введите ваш полный адрес*"
+                                                        name="fullAddress"
+                                                        required
+                                                        ngModel
+                                                        #fullAddress="ngModel"
+                                                    />
+                                                <span *ngIf="!fullAddress.valid && fullAddress.touched">
+                                                    <small class="text-danger">Обязательное поле</small>
+                                                </span>
+                                                </div>
+                                            </app-flex-column>
+                                        </app-flex-row>
+                                        <app-flex-row>
+                                            <app-flex-column>
+                                                <div>
+                                                    <input
+                                                        type="text"
+                                                        placeholder="Дом*"
+                                                        name="house"
+                                                        required
+                                                        ngModel
+                                                        #house="ngModel"
+                                                    />
+                                                <span *ngIf="!house.valid && house.touched">
+                                                    <small class="text-danger">Обязательное поле</small>
+                                                </span>
+                                                </div>
+                                            </app-flex-column>
+                                            <input type="text" placeholder="Корпус"/>
+                                            <input type="text" placeholder="Квартира"/>
+                                        </app-flex-row>
+                                    </app-flex-column>
+                                </app-flex-container>
+                            </app-flex>
+                        </app-tab>
+                        <app-tab tabId="pickup">
+                            todo
+                            <!-- <app-flex-container>
+                                <app-flex-column>
+                                    <app-flex-row>
+                                        Выберите ваш город и отделение
+                                    </app-flex-row>
+                                    <app-flex-row>
+                                        <input type="text" placeholder="Выберите ваш город и отделение"/>
+                                    </app-flex-row>
+                                </app-flex-column>
+                            </app-flex-container> -->
+                        </app-tab>
+                    </app-tabs>
+                </app-flex-column>
+            </app-flex-row>
+    
+            <app-horizontal-line />
+    
+            <div class="checkout-personal-data checkout-form-checkout-section">
+                <app-flex-container>
+                    <app-flex-row>
+                        <app-payment-type
+                            [value]="'card'"
+                            name="type"
+                            required
+                            ngModel
+                            #type="ngModel"
+                        >
+                            Онлайн оплата
+                            {{' '}}<i class="bi bi-credit-card"></i>
+                            {{' '}}<i class="bi bi-paypal"></i>
+                        </app-payment-type>
+                        <app-payment-type
+                            [value]="'cash'"
+                            name="type"
+                            required
+                            ngModel
+                            #type="ngModel"
+                        >
+                            Оплата при получении
+                            {{' '}}<i class="bi bi-cash"></i>
+                            {{' '}}<i class="bi bi-credit-card"></i>
+                        </app-payment-type>
+                    </app-flex-row>
+                </app-flex-container>
+            </div>
+        </app-flex>
+    </app-card-wrapper>
+    <app-summary-card
+        [items]="cart"
+        [showNextButton]="true"
+        [nextButtonText]="checkoutForm.form.valid ? 'Перейти к оплате' : 'Заполните обязательные поля, чтобы перейти к оплате'"
+        buttonType="submit"
+        [disabled]="!checkoutForm.form.valid"
+    />
+</app-grid>
+</form>

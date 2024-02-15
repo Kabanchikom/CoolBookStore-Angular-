@@ -1,0 +1,13 @@
+@import "../../styles";
+
+.grid {
+    display: grid;
+    grid-template-columns: var(--grid-template-columns);
+    gap: var(--gap);
+}
+
+@media (max-width: $width-tablet) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

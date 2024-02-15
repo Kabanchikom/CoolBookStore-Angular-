@@ -1,0 +1,19 @@
+@import '../../shared';
+
+:host {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: var(--flex-direction);
+
+  margin-right: auto;
+  margin-left: auto;
+  
+  gap: var(--gap);
+  justify-content: var(--justify-content);
+  align-items: var(--align-items);
+
+  flex-wrap: var(--flex-wrap);
+}

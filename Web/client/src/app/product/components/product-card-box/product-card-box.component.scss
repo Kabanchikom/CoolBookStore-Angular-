@@ -1,0 +1,16 @@
+.product-card-box {
+    &-btn-container {
+      display: flex;
+      column-gap: 10px;
+      margin-top: 10px;
+  
+      &-add-btn {
+        width: 75%;
+      }
+  
+      &-like-btn {
+        width: 25%;
+      }
+    }
+  }
+  

@@ -1,0 +1,49 @@
+<form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+    <app-flex flexDirection="column" gap="20px">
+        <app-flex flexDirection="column" gap="10px">
+            <app-flex-row>
+                <app-flex-column>
+                    <div>
+                        <input
+                        id="username"
+                        name="username"
+                        type="email"
+                        placeholder="Введите имя пользователя..."
+                        required
+                        ngModel
+                        #usernameModel="ngModel"
+                    >
+                    <small class="text-danger" *ngIf="!usernameModel.valid && usernameModel.touched">Введите имя пользователя</small>
+                    </div>
+                </app-flex-column>
+            </app-flex-row>
+            <app-flex-row>
+                <app-flex-column>
+                    <div>
+                        <input
+                        id="password"
+                        name="password"
+                        type="password"
+                        placeholder="Введите пароль..."
+                        required
+                        ngModel
+                        #passwordModel="ngModel"
+                    >
+                    <small class="text-danger" *ngIf="!passwordModel.valid && passwordModel.touched">Введите пароль</small>
+                    </div>
+                </app-flex-column>
+            </app-flex-row>
+        </app-flex>
+        <app-flex-row>
+            <app-flex-column>
+                <app-button
+                    type="submit"
+                    variant="btn-primary"
+                    [disabled]="!loginForm.form.valid"
+                >
+                    Войти
+                </app-button>
+            </app-flex-column>
+        </app-flex-row>
+    </app-flex>
+</form>

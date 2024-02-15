@@ -1,0 +1,16 @@
+@import "../../../../shared/styles";
+
+.summary-card-row {
+  &-param {
+    text-align: left;
+    color: $color-secondary;
+  }
+
+  &-value {
+    text-align: right;
+  }
+
+  &-total {
+    font-size: 1.5rem;
+  }
+}

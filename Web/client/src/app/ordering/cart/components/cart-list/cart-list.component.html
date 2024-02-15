@@ -1,0 +1,20 @@
+<app-grid gap="20px" gridTemplateColumns="3fr 1fr">
+    <app-flex-container>
+        <app-flex-row *ngFor="let x of cartLines">
+            <app-flex-column>
+                <app-cart-item-card
+                    [cartLine]="x"
+                    (onUpdateItem)="handleOrderUpdateItem()"
+                    (onDeleteClick)="handleOrderDeleteItem(x.productId)"
+                ></app-cart-item-card>
+            </app-flex-column>
+        </app-flex-row>
+    </app-flex-container>
+    <app-summary-card
+        [items]="cartLines"
+        [showNextButton]="true"
+        [nextButtonText]="'Перейти к оформлению'"
+        (nextClick)="navigateToCheckout()"
+        [disabled]="false"
+    />
+</app-grid>

@@ -1,0 +1,275 @@
+{
+    "products": [
+        {
+            "id": "624c7b99-f653-4b6c-6dba-08db64dfeb51",
+            "name": "Ручка шариковая Luxury Super Flex",
+            "imgSrc": "assets/img/pencil.webp",
+            "oldPrice": 1999.00,
+            "newPrice": null,
+            "rating": 4.75,
+            "isOnSale": false,
+            "description": "Ручки"
+        },
+        {
+            "id": "a2c7fa77-3255-4868-6dbb-08db64dfeb51",
+            "name": "Пикник на обочине",
+            "imgSrc": "assets/img/abs_strugatskie_piknik_na_obochine.jpeg",
+            "oldPrice": 219.00,
+            "newPrice": 175.00,
+            "rating": 4.75,
+            "isOnSale": false,
+            "description": "А.Н. Стругацкий, Б.Н. Стругацкий"
+        },
+        {
+            "id": "6b3d7fa1-1346-4073-6dbc-08db64dfeb51",
+            "name": "Архипелаг Гулаг",
+            "imgSrc": "assets/img/archipelag_gulag.jpg",
+            "oldPrice": 99.00,
+            "newPrice": 89.00,
+            "rating": 4.30,
+            "isOnSale": true,
+            "description": "А.И. Солженицын"
+        },
+        {
+            "id": "a9837721-6ea0-467d-6dbd-08db64dfeb51",
+            "name": "Государственность и Анархия",
+            "imgSrc": "assets/img/bakunin_gosudarstvennost_i_anarhia.jpg",
+            "oldPrice": 529.00,
+            "newPrice": 429.00,
+            "rating": 4.12,
+            "isOnSale": true,
+            "description": "М.А. Бакунин"
+        },
+        {
+            "id": "23496b24-707e-459f-6dbe-08db64dfeb51",
+            "name": "Книга символов",
+            "imgSrc": "assets/img/balmont_kniga_simvolov.jpg",
+            "oldPrice": 749.00,
+            "newPrice": 699.00,
+            "rating": 4.67,
+            "isOnSale": false,
+            "description": "К.Д. Бальмонт"
+        },
+        {
+            "id": "53c71df6-8a1b-487a-6dbf-08db64dfeb51",
+            "name": "Дракула",
+            "imgSrc": "assets/img/brem_stoker_drakula.jpg",
+            "oldPrice": 419.00,
+            "newPrice": 399.00,
+            "rating": 4.55,
+            "isOnSale": true,
+            "description": "Б. Стокер"
+        },
+        {
+            "id": "d1db6036-8a39-477c-6dc0-08db64dfeb51",
+            "name": "Бусидо",
+            "imgSrc": "assets/img/busido.jpg",
+            "oldPrice": 99.00,
+            "newPrice": null,
+            "rating": 4.15,
+            "isOnSale": false,
+            "description": "И. Нитобэ"
+        },
+        {
+            "id": "cf0a3f43-83df-4648-6dc1-08db64dfeb51",
+            "name": "Божественная комедия",
+            "imgSrc": "assets/img/dante_bozestvennaya_komediya.jpg",
+            "oldPrice": 1299.00,
+            "newPrice": null,
+            "rating": 4.35,
+            "isOnSale": false,
+            "description": "Д. Алигьери"
+        },
+        {
+            "id": "fdbe14f1-adcd-4f08-6dc2-08db64dfeb51",
+            "name": "Гиперион",
+            "imgSrc": "assets/img/den_simmons_hyperion.jpg",
+            "oldPrice": 2095.00,
+            "newPrice": 1495.00,
+            "rating": 4.12,
+            "isOnSale": true,
+            "description": "Д. Симмонс"
+        },
+        {
+            "id": "43df706f-ab5f-4e22-6dc3-08db64dfeb51",
+            "name": "Потерянный рай",
+            "imgSrc": "assets/img/djon_milton_poteryaniy_rai.jpg",
+            "oldPrice": 199.00,
+            "newPrice": null,
+            "rating": 4.23,
+            "isOnSale": false,
+            "description": "Д. Мильтон"
+        },
+        {
+            "id": "2e3ef200-a568-4d14-6dc4-08db64dfeb51",
+            "name": "Фауст",
+            "imgSrc": "assets/img/gete_faust.jpg",
+            "oldPrice": 1199.00,
+            "newPrice": 1200.00,
+            "rating": 4.87,
+            "isOnSale": true,
+            "description": "И.В. Гете"
+        },
+        {
+            "id": "da70219c-2de3-4c7b-6dc5-08db64dfeb51",
+            "name": "Замок",
+            "imgSrc": "assets/img/kafka-zamok.jpg",
+            "oldPrice": 199.00,
+            "newPrice": null,
+            "rating": 4.12,
+            "isOnSale": false,
+            "description": "Ф. Кафка"
+        },
+        {
+            "id": "c58b2822-f5d9-4261-6dc6-08db64dfeb51",
+            "name": "Над кукушкиным гнездом",
+            "imgSrc": "assets/img/ken_kizi_nad_kukushkinim_gnezdom.jpg",
+            "oldPrice": 199.00,
+            "newPrice": null,
+            "rating": 4.43,
+            "isOnSale": false,
+            "description": "К. Кизи"
+        },
+        {
+            "id": "67a82154-2e45-4cc0-6dc7-08db64dfeb51",
+            "name": "Искусство программирования",
+            "imgSrc": "assets/img/knut_iskusstvo_programmirovaniya.jpg",
+            "oldPrice": 4199.00,
+            "newPrice": 4099.00,
+            "rating": 4.10,
+            "isOnSale": false,
+            "description": "Д.Э. Кнут"
+        },
+        {
+            "id": "6ceb4c7b-ee5c-4e3d-6dc8-08db64dfeb51",
+            "name": "Солярис",
+            "imgSrc": "assets/img/lem_solyaris.jpg",
+            "oldPrice": 99.00,
+            "newPrice": null,
+            "rating": 4.65,
+            "isOnSale": false,
+            "description": "С. Лем"
+        },
+        {
+            "id": "29a91c63-7ac9-4fad-6dc9-08db64dfeb51",
+            "name": "Мастер и Маргарита",
+            "imgSrc": "assets/img/master_i_margarita.jpg",
+            "oldPrice": 699.00,
+            "newPrice": 599.00,
+            "rating": 4.49,
+            "isOnSale": true,
+            "description": "М.А. Булгаков"
+        },
+        {
+            "id": "a3f6dd04-9806-4d7e-6dca-08db64dfeb51",
+            "name": "Мир как воля и представление",
+            "imgSrc": "assets/img/mir_kak_volya_i_predstavlenie.jpg",
+            "oldPrice": 899.00,
+            "newPrice": 599.00,
+            "rating": 4.87,
+            "isOnSale": false,
+            "description": "А. Шопенгауэр"
+        },
+        {
+            "id": "58e45924-2afa-42ec-6dcb-08db64dfeb51",
+            "name": "Государство",
+            "imgSrc": "assets/img/platon_gosudarstvo.jpg",
+            "oldPrice": 99.00,
+            "newPrice": null,
+            "rating": 4.12,
+            "isOnSale": false,
+            "description": "Платон"
+        },
+        {
+            "id": "73360dac-3c86-45a9-6dcc-08db64dfeb51",
+            "name": "Преступление и наказание",
+            "imgSrc": "assets/img/prestuplenie_i_nakazanie.jpg",
+            "oldPrice": 599.00,
+            "newPrice": 499.00,
+            "rating": 4.44,
+            "isOnSale": false,
+            "description": "Ф.М. Достоевский"
+        },
+        {
+            "id": "e602a0d6-dc43-491d-6dcd-08db64dfeb51",
+            "name": "Три товарища",
+            "imgSrc": "assets/img/remark_tri_tovarisha.jpg",
+            "oldPrice": 299.00,
+            "newPrice": 199.00,
+            "rating": 4.63,
+            "isOnSale": false,
+            "description": "Э.М. Ремарк"
+        },
+        {
+            "id": "63cae735-210b-4851-6dce-08db64dfeb51",
+            "name": "Стихи о прекрасной даме",
+            "imgSrc": "assets/img/stihi_o_prekrasnoi_dame.jpg",
+            "oldPrice": 199.00,
+            "newPrice": null,
+            "rating": 4.43,
+            "isOnSale": true,
+            "description": "А.А. Блок"
+        },
+        {
+            "id": "e5924633-ac2c-460e-6dcf-08db64dfeb51",
+            "name": "Сто лет одиночества",
+            "imgSrc": "assets/img/sto_let_odinochestva.jpg",
+            "oldPrice": 799.00,
+            "newPrice": 699.00,
+            "rating": 4.49,
+            "isOnSale": false,
+            "description": "Г.Г. Маркес"
+        },
+        {
+            "id": "48a82101-9f5d-4a55-6dd0-08db64dfeb51",
+            "name": "Программирование: принципы и практика использования C++",
+            "imgSrc": "assets/img/straustrup_srogramirovanie_cpp.jpg",
+            "oldPrice": 4799.00,
+            "newPrice": 4499.00,
+            "rating": 4.42,
+            "isOnSale": false,
+            "description": "Б. Страуструп"
+        },
+        {
+            "id": "89140eca-b93a-43eb-6dd1-08db64dfeb51",
+            "name": "Искусство войны",
+            "imgSrc": "assets/img/sun_tzy_iskusstvo_voiny.jpeg",
+            "oldPrice": 99.00,
+            "newPrice": null,
+            "rating": 4.69,
+            "isOnSale": true,
+            "description": "Сунь-Цзы"
+        },
+        {
+            "id": "e1e5d434-ef0b-4aba-6dd2-08db64dfeb51",
+            "name": "Так говорил Заратустра",
+            "imgSrc": "assets/img/tak_govoril_zaratustra.webp",
+            "oldPrice": 199.00,
+            "newPrice": null,
+            "rating": 4.11,
+            "isOnSale": false,
+            "description": "Ф. Ницше"
+        },
+        {
+            "id": "5323fb9e-6eb8-44d6-6dd3-08db64dfeb51",
+            "name": "Война и мир",
+            "imgSrc": "assets/img/voina_i_mir.jpg",
+            "oldPrice": 799.00,
+            "newPrice": null,
+            "rating": 4.24,
+            "isOnSale": false,
+            "description": "Л.Н. Толстой"
+        },
+        {
+            "id": "cbbfa47a-82bd-414e-6dd4-08db64dfeb51",
+            "name": "Мы",
+            "imgSrc": "assets/img/zamyatin_mi.jpg",
+            "oldPrice": 499.00,
+            "newPrice": null,
+            "rating": 4.32,
+            "isOnSale": false,
+            "description": "Е.И. Замятин"
+        }
+    ],
+    "total": 27
+}

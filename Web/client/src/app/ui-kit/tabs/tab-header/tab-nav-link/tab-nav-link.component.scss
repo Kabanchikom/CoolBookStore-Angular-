@@ -1,0 +1,27 @@
+@import '../../../styles';
+
+.tab-nav-link {
+    display: inline-block;
+
+    list-style: none;
+    cursor: pointer;
+    color: $color-secondary;
+    border-radius: 5px 5px 0 0;
+    font-size: 1.1rem;
+
+    margin-bottom: -1px;
+    padding: 0.5rem 0.75rem;
+}
+
+.active {
+    background-color: $color-layer-1;
+    border: solid #ccc;
+    border-width: 1px 1px 0 1px;
+}
+
+@media (max-width: $width-tablet) {
+:host {
+    border-width: 1px;
+    border-radius: 5px 5px 5px 5px;
+  }
+}

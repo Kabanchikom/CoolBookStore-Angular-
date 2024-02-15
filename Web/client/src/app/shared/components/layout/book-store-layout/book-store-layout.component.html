@@ -1,0 +1,11 @@
+<div>
+    <app-book-store-header />
+    <app-main>
+        <ng-content />
+        <app-auth-modal
+            [isActive]="isLoginModalActive"
+            (closeClick)="onLoginModalCloseClick()"
+        />
+    </app-main>
+    <app-book-store-footer />
+</div>

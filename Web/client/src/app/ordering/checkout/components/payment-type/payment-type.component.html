@@ -1,0 +1,14 @@
+<div class="payment-type">
+    <input
+        [id]="value"
+        type="radio"
+        [name]="name"
+        [value]="value"
+        (change)="onChanged()"
+        (blur)="onBlur($event)"
+        [disabled]="disabled"
+    />
+    <label [htmlFor]="value">
+        <ng-content />
+    </label>
+</div>

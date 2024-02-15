@@ -1,0 +1,16 @@
+<app-product-card-list-item
+    [productCard]="productCard"
+    (onDeleteClick)="onDeleteClick()"
+>
+    <input
+        class="cart-item-quantity"
+        [value]="cartLine?.quantity"
+        disabled
+    />
+    <app-button variant="btn-outline-primary" (click)="onPlusButtonClick()">
+        <i class="bi bi-plus-lg"></i>
+    </app-button>
+    <app-button variant="btn-outline-primary" (click)="onMinusButtonClick()">
+        <i class="bi bi-dash-lg"></i>
+    </app-button>
+</app-product-card-list-item>

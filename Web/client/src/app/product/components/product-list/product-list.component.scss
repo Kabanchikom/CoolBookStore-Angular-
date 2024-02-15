@@ -1,0 +1,28 @@
+@import "../../../shared/styles";
+
+.grid-card-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  
+  .product-list {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+@media (min-width: $width-mobile) and (max-width: $width-tablet) {
+  .product-list {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: ($width-mobile - 1)) {
+  .product-list {
+      grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,37 @@
+<app-card-wrapper [enablePadding]="true">
+    <app-flex-container gap="20px">
+        <app-summary-card-row
+            param="Количество товаров"
+            [value]="content.quantity.toString()"
+        />
+        <app-summary-card-row
+            param="Сумма"
+            [value]="content.sum.toString() + ' ₽'"
+        />
+        <app-summary-card-row
+            param="Доставка"
+            value="Бесплатно"
+        />
+        <app-summary-card-row
+            param="Скидка"
+            [value]="'- ' + content.discount.toString() + ' ₽'"
+        />
+        <app-horizontal-line />
+        <app-summary-card-row
+            [variant]="SummaryCardRowVariant.Total"
+            param="Итого"
+            [value]="content.total.toString() + ' ₽'"
+        />
+
+        <app-flex-row *ngIf="showNextButton" [isAdaptive]="false">
+            <app-button
+                class="summary-card-chechout-btn"
+                (click)="this.nextClick.emit()"
+                [type]="buttonType"
+                [disabled]="disabled"
+                variant="btn-primary">
+                {{ nextButtonText }}
+            </app-button>
+        </app-flex-row>
+    </app-flex-container>
+</app-card-wrapper>

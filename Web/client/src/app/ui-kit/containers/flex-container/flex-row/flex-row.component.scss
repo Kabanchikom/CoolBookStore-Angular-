@@ -1,0 +1,16 @@
+@import "../../../styles";
+@import "../../../shared";
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap);
+  justify-content: var(--justify-content);
+  align-items: var(--align-items);
+}
+
+@media (max-width: $width-mobile) {
+  .adaptive-row {
+    flex-direction: column;
+  }
+}

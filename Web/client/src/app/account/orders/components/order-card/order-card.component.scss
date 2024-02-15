@@ -1,0 +1,30 @@
+@import "../../../../shared/styles";
+
+.order-card {
+  &-header, &-body {
+    padding: 15px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-header {
+    &-payed {
+      text-align: right;
+    }
+  }
+
+  &-body {
+    background-color: $color-layer-1;
+  }
+}
+
+.order-card-header {
+  border-bottom: 0;
+  background-color: $color-layer-0;
+}
+
+.order-card-header h5,
+.order-card-body-right-col h5 {
+  color: $color-secondary;
+}

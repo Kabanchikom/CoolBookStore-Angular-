@@ -1,0 +1,46 @@
+.row-card {
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    column-gap: 10px;
+  
+    &-img-column {
+      width: 100px;
+  
+      & a {
+        display: block;
+        height: 100%;
+  
+        & img {
+          display: block;
+          height: 100%;
+          min-width: 25px;
+          border-radius: 5px;
+        }
+      }
+    }
+  
+    &-content-column {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      flex-grow: 2;
+      column-gap: 10px;
+    }
+  
+    &-controls-column {
+      display: flex;
+      justify-content: right;
+      font-size: 2rem;
+  
+      &-control {
+        height: fit-content;
+        border: none;
+        background: none;
+        font-size: 2rem;
+        line-height: 1rem;
+      }
+    }
+  }
+  

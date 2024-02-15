@@ -1,0 +1,13 @@
+<div class="popup-target" (click)="onClick($event)">
+    <ng-content select="[target]"></ng-content>
+    <div *ngIf="isActive" class="popup-body">
+        <app-card-wrapper>
+            <div class="popup-content">
+                <button class="popup-close" (click)="onClose($event)">
+                    <i class="bi bi-x"></i>
+                </button>
+                <ng-content></ng-content>
+            </div>
+        </app-card-wrapper>
+    </div>
+</div>

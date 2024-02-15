@@ -1,0 +1,18 @@
+<app-flex-row [isAdaptive]="false">
+    <app-flex-column>
+        <div [class]="{
+                'summary-card-row-param': true,
+                'summary-card-row-total': variant === SummaryCardRowVariant.Total
+            }">
+            {{param}}
+        </div>
+    </app-flex-column>
+    <app-flex-column>
+        <div [class]="{
+            'summary-card-row-value': true,
+            'summary-card-row-total': variant === SummaryCardRowVariant.Total
+        }">
+            {{value}}
+        </div>
+    </app-flex-column>
+</app-flex-row>

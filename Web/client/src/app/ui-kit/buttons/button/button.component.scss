@@ -1,0 +1,68 @@
+@import '../../styles';
+
+:host {
+  width: 100%;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+button {
+  &:disabled {
+    &:hover {
+      background-color: $color-disabled;
+    }
+    cursor: not-allowed;
+    background-color: $color-disabled;
+  }
+}
+
+.btn-primary {
+  padding: 10px 20px;
+
+  background-color: $color-primary;
+  border-style: none;
+  border-radius: 5px;
+
+  color: $color-ui-capture;
+  cursor:pointer;
+
+  &:hover {
+    background-color: $color-primary-hover;
+  }
+
+  &:active {
+    background-color: $color-primary-active;
+  }
+}
+
+.btn-outline-primary {
+  background: none;
+  padding: 10px 10px;
+  border: solid 1px $color-primary;
+  border-radius: 5px;
+
+  color: $color-primary;
+  cursor:pointer;
+
+  &:hover {
+    color: $color-ui-capture;
+    border-color: $color-primary-hover;
+    background-color: $color-primary-hover;
+  }
+
+  &:active {
+    border-color: $color-primary-active;
+    background-color: $color-primary-active;
+  }
+}
+
+.btn-control {
+  height: fit-content;
+  border: none;
+  background: none;
+  font-size: 2rem;
+  line-height: 1rem;
+  color: $color-ui-capture;
+}

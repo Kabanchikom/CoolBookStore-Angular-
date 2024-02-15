@@ -1,0 +1,75 @@
+<app-header>
+    <div class="app-header">
+        <div class="header-inner">
+            <div class="header-logo-searchbar">
+                <app-logo />
+                <div class="header-searchbar">
+                    <app-searchbar placeholder="Поиск по сайту" />
+                </div>
+            </div>
+            <div class="header-menu">
+                <app-header-menu-item text="Сообщения" logoClass="bi bi-bell" (click)="navigateTo(['/account/orders'])"/>
+                <app-header-menu-item text="Избранное" logoClass="bi bi-heart" (click)="navigateTo(['/account/favorites'])"/>
+                <app-popup
+                    *ngIf="isLoggedIn; else login"
+                    [isActive]="isAccountPopupActive"
+                    (click)="onPopupClick()"
+                    (closeClick)="isAccountPopupActive = false;"
+                >
+                    <app-header-menu-item target
+                        text="Профиль"
+                        logoClass="bi bi-person"
+
+                    />
+                    <app-menu>
+                        <app-menu-option (click)="navigateTo(['/account/settings'])">
+                            Настройки
+                        </app-menu-option>
+                        <app-menu-option (click)="onLogoutClick($event);">
+                            Выход
+                        </app-menu-option>
+                    </app-menu>
+                </app-popup>
+                <ng-template #login>
+                    <app-header-menu-item
+                        text="Вход"
+                        logoClass="bi bi-person"
+                        (click)="onLoginClick()"
+                    />
+                </ng-template>
+<!-- 
+                <Popup
+                    isOpen={isAccountPopupActive}
+                    onCloseClick={() => setIsAccountPopupActive(false)}
+                    target={
+                        <HeaderMenuItem
+                            onClick={() => handleAuthorizedClick(() => setIsAccountPopupActive(true))}
+                        >
+                            <i class={"bi bi-person"}/>
+                            {profileText}
+                        </HeaderMenuItem>
+                    }
+                >
+                    <Menu>
+                        <MenuOption onClick={
+                            () => {
+                                handleAuthorizedClick(() => navigate("/account/settings"));
+                                setIsAccountPopupActive(false);
+                            }
+                        }>
+                            Настройки
+                        </MenuOption>
+                        <MenuOption onClick={handleLogout}>Выход</MenuOption>
+                    </Menu>
+                </Popup> -->
+                <app-header-menu-item text="Корзина" logoClass="bi bi-cart" (click)="navigateTo(['/ordering/cart'])" />
+            </div>
+            <nav class="header-nav">
+                <app-header-nav-item text="Книги" (click)="navigateTo(['/catalog'])" />
+                <app-header-nav-item text="Канцтовары" (click)="navigateTo(['/catalog'])" />
+                <app-header-nav-item text="О нас" (click)="navigateTo(['/about'])"/>
+                <app-header-nav-item text="Контакты" (click)="navigateTo(['/contacts'])"/>
+            </nav>
+        </div>
+    </div>
+</app-header>

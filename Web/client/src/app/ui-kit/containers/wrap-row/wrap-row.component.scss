@@ -1,0 +1,8 @@
+@import "../../shared";
+
+.wrap-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--gap);
+}

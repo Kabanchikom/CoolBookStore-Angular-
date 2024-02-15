@@ -1,0 +1,18 @@
+<app-card-wrapper [scaleOnHover]="false" [enableBorder]="enableBorder">
+    <app-row-card
+        [imgSrc]="'assets/' + productCard?.imgSrc"
+        (onDeleteClick)="onDeleteClick.emit()"
+    >
+        <div class="product-card-list-item-name-block">
+            <app-card-name [name]="productCard?.name"></app-card-name>
+            <app-card-description [description]="productCard?.description"></app-card-description>
+        </div>
+        <div class="product-card-list-item-quantity-price-block">
+            <app-card-price [price]="productCard?.newPrice"></app-card-price>
+
+        </div>
+        <div class="product-card-list-item-children-block">
+            <ng-content />
+        </div>
+    </app-row-card>
+</app-card-wrapper>

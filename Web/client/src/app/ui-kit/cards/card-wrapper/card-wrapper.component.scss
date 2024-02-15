@@ -1,0 +1,26 @@
+@import '../../styles';
+
+.card-wrapper {
+  background-color: $color-layer-1;
+  border-radius: 5px;
+}
+
+.scaleOnHover {
+  transition: transform .2s;
+}
+
+.scaleOnHover:hover {
+  transform: scale(1.1);
+}
+
+.enablePadding {
+  padding: 20px;
+}
+
+.enableBorder {
+  border: 1px solid $color-line;
+}
+
+.display-inline {
+  display: inline;
+}

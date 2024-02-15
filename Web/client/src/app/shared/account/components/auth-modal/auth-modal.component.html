@@ -1,0 +1,24 @@
+<app-modal-window
+    [isActive]="isActive"
+    maxWidth="500px"
+    (closeClick)="closeClick.emit()"
+>
+    <app-flex *ngIf="isLoading; else loaded;" justifyContent="center">
+        <app-spinner></app-spinner>
+    </app-flex>
+    <ng-template #loaded>
+        <app-tabs>
+            <app-tab-header defaultId="login">
+                <app-tab-nav-link tabId="login" title="Вход" />
+                <app-tab-nav-link tabId="register" title="Регистрация" />
+            </app-tab-header>
+
+            <app-tab tabId="login">
+                <app-login-form></app-login-form>
+            </app-tab>
+            <app-tab tabId="register">
+                <app-register-form></app-register-form>
+            </app-tab>
+        </app-tabs>
+    </ng-template>    
+</app-modal-window>

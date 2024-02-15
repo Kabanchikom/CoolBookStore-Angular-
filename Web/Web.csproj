@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="client\**" />
+      <Content Remove="client\**" />
+      <EmbeddedResource Remove="client\**" />
+      <None Remove="client\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="12.0.0" />
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.16" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.16" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.11" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.11" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.11">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Areas\Product\Controllers" />
+      <Folder Include="Services" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="wwwroot\img\abs_strugatskie_piknik_na_obochine.jpeg" />
+      <None Include="wwwroot\img\archipelag_gulag.jpg" />
+      <None Include="wwwroot\img\bakunin_gosudarstvennost_i_anarhia.jpg" />
+      <None Include="wwwroot\img\balmont_kniga_simvolov.jpg" />
+      <None Include="wwwroot\img\brem_stoker_drakula.jpg" />
+      <None Include="wwwroot\img\busido.jpg" />
+      <None Include="wwwroot\img\dante_bozestvennaya_komediya.jpg" />
+      <None Include="wwwroot\img\den_simmons_hyperion.jpg" />
+      <None Include="wwwroot\img\djon_milton_poteryaniy_rai.jpg" />
+      <None Include="wwwroot\img\gete_faust.jpg" />
+      <None Include="wwwroot\img\kafka-zamok.jpg" />
+      <None Include="wwwroot\img\ken_kizi_nad_kukushkinim_gnezdom.jpg" />
+      <None Include="wwwroot\img\knut_iskusstvo_programmirovaniya.jpg" />
+      <None Include="wwwroot\img\lem_solyaris.jpg" />
+      <None Include="wwwroot\img\master_i_margarita.jpg" />
+      <None Include="wwwroot\img\mir_kak_volya_i_predstavlenie.jpg" />
+      <None Include="wwwroot\img\platon_gosudarstvo.jpg" />
+      <None Include="wwwroot\img\prestuplenie_i_nakazanie.jpg" />
+      <None Include="wwwroot\img\remark_tri_tovarisha.jpg" />
+      <None Include="wwwroot\img\stihi_o_prekrasnoi_dame.jpg" />
+      <None Include="wwwroot\img\sto_let_odinochestva.jpg" />
+      <None Include="wwwroot\img\straustrup_srogramirovanie_cpp.jpg" />
+      <None Include="wwwroot\img\sun_tzy_iskusstvo_voiny.jpeg" />
+      <None Include="wwwroot\img\tak_govoril_zaratustra.webp" />
+      <None Include="wwwroot\img\voina_i_mir.jpg" />
+      <None Include="wwwroot\img\zamyatin_mi.jpg" />
+    </ItemGroup>
+
+</Project>

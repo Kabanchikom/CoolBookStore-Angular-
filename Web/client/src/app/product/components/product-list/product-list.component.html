@@ -1,0 +1,14 @@
+<section class="product-list">
+    <div *ngFor="let product of products">
+        <app-card-wrapper [scaleOnHover]="true">
+            <app-product-card-box [product]="product" (cardClick)="onCardClick($event)" />
+        </app-card-wrapper>
+    </div>
+    <app-modal-window
+        maxWidth="1000px"
+        [isActive]="showProductModal"
+        (closeClick)="onCloseClick()"
+    >
+        <router-outlet></router-outlet>
+    </app-modal-window>
+</section>
